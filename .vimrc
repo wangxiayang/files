@@ -9,5 +9,7 @@ set hlsearch
 set smartindent
 set number
 
-map <F1> :call system('tmux send-keys -t left "make" C-m') <CR> :call system('tmux send-keys -t left "Show." C-m') <CR>
-map <F2> :call system('tmux send-keys -t left "Quit." C-m') <CR> <F1>  
+map <F1> :call system('tmux send-keys -t left "make" C-m') <CR>
+map <F2> :call system('tmux send-keys -t left "Show." C-m') <CR>
+map <F3> :call system('tmux send-keys -t left "Quit." C-m') <CR>
+map <F4> :call system('tmux send-keys -t left "Quit." C-m "make" C-m "Focus 1." C-m') <CR>
