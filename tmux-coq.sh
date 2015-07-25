@@ -15,7 +15,7 @@ tmux split-window -h 'make edit; bash'
 tmux select-pane -t 1
 
 # create another window
-tmux new-window -t $SESSION -a -n coqdoc
+tmux new-window -t $SESSION -a -n coqdoc 'elinks /home/xywang/example/python/crawler/file/index.html; bash'
 tmux new-window -t $SESSION -a -n git
 tmux new-window -t $SESSION -a -n other
 
