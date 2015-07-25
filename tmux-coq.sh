@@ -7,11 +7,11 @@ COQWS='/home/xywang/coq/trans/coq/'
 cd $COQWS
 
 # -d will not attach the terminal
-tmux -2 new-session -d -s $SESSION
+tmux -2 new-session -d -s $SESSION 'make; bash'
 
 # window indexed from 1, which is customized in my .tmux.conf
 tmux rename-window -t $SESSION:1 coq
-tmux split-window -h 'make edit'
+tmux split-window -h 'make edit; bash'
 tmux select-pane -t 1
 
 # create another window
