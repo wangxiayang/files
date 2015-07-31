@@ -8,6 +8,7 @@ set softtabstop=4   " Sets the number of columns for a TAB.
 set hlsearch
 set smartindent
 set number
+syntax on
 
 map <F1> :call system('tmux send-keys -t left "make" C-m') <CR>
 map <F2> :call system('tmux send-keys -t left "Show." C-m') <CR>
