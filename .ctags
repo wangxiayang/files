@@ -1,0 +1,11 @@
+--langdef=coq
+--langmap=coq:.v
+
+--regex-coq=/^\s*Definition\s*([a-zA-Z0-9_-]+)/\1/d,definition/
+--regex-coq=/^\s*Fixpoint\s*([a-zA-Z0-9_-]+)/\1/d,fixpoint/
+--regex-coq=/^\s*Record\s*([a-zA-Z0-9_-]+)/\1/d,record/
+
+--regex-coq=/^\s*Ltac\s*([a-zA-Z0-9_-]+)/\1/l,ltac/
+
+--regex-coq=/^\s*Theorem\s*([a-zA-Z0-9_-]+)/\1/t,theorem/
+--regex-coq=/^\s*Lemma\s*([a-zA-Z0-9_-]+)/\1/t,lemma/
