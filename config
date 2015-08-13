@@ -1,0 +1,7 @@
+Host vyatta
+Hostname 202.120.40.82
+User vyatta
+
+Host xywang-pc
+ProxyCommand ssh -q vyatta nc xywang-pc 22
+User xywang
