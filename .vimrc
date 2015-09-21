@@ -10,7 +10,15 @@ set smartindent
 set number
 syntax on
 
-map <F1> :call system('tmux send-keys -t left "make" C-m') <CR>
-map <F2> :call system('tmux send-keys -t left "Show." C-m') <CR>
-map <F3> :call system('tmux send-keys -t left "Quit." C-m') <CR>
-map <F4> :call system('tmux send-keys -t left "Quit." C-m "make" C-m "Focus 1." C-m') <CR>
+"map <F1> :call system('tmux send-keys -t left "make" C-m') <CR>
+"map <F2> :call system('tmux send-keys -t left "Show." C-m') <CR>
+"map <F3> :call system('tmux send-keys -t left "Quit." C-m') <CR>
+"map <F4> :call system('tmux send-keys -t left "Quit." C-m "make" C-m "Focus 1." C-m') <CR>
+
+augroup filetype
+	au! BufRead,BufNewFile *.ll set filetype=llvm
+augroup END
+
+augroup filetype
+	au! BufRead,BufNewfile *.td	set filetype=tablegen
+augroup END
