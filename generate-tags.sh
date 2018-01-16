@@ -19,4 +19,6 @@ done
 
 # TODO: exclude tools/arch and exclude tools/perf/arch
 
+cmd=`echo $cmd --exclude=tools/* --exclude=drivers/*`
+
 eval $cmd -V
